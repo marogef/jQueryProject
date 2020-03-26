@@ -1,24 +1,44 @@
+$(".font-face").css("font-family","nmfont1", "src: url('AlegreyaSC-Bold.ttf')");
+$(".font-face").css("font-family","nmfont2", "src: url('OleoScriptSwashCaps-Regular.ttf')");
+$(".font-face").css("font-family","nmfont3", "src: url('Balthazar-Regular.ttf')");
+$(".font-face").css("font-family","nmfont4", "src: url('Artifika.ttf')");
+$(".font-face").css("font-family","nmfont5", "src: url('Dynalight-Regular.otf')");
+
+
+
 /*Keep several font-family ready */
+/*
 @font-face {
 font-family: nmfont1;
 src: url(AlegreyaSC-Bold.ttf);
 }
+*/
+/*
 @font-face {
 font-family: nmfont2;
 src: url(OleoScriptSwashCaps-Regular.ttf);
 }
+*/
+/*
 @font-face {
 font-family: nmfont3;
 src: url(Balthazar-Regular.ttf);
 }
+*/
+/*
 @font-face {
 font-family: nmfont4;
 src: url(Artifika.ttf);
 }
+*/
+/*
 @font-face {
 font-family: nmfont5;
 src: url(Dynalight-Regular.otf);
 }
+*/
+
+
 body {
 font-family: Arial, Helvetica, Sans-Serif;
 font-size: 20px;
