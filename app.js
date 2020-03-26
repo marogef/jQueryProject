@@ -44,7 +44,12 @@ $('body').css('font-size: 20px');
 $('body').css('background: #EDEDED');
 body.css({"CSS property":"value", "CSS property":"value", "CSS property":"value"} );
 */
-$('body').css({"font-family":"Arial","Helvetica","Sans-Serif"});
+//$('body').css({"(font-family: Arial)", "Helvetica", "Sans-Serif"});
+$('body').css({"font-family": "Arial"});
+$('body').css({"font-family": "Helvetica"});
+$('body').css({"font-family": "San-Serif"});
+
+
 $('body').css({"font-size":"20px"});
 $('body').css({"background":"#EDEDED"});
 
@@ -61,7 +66,7 @@ background: #EDEDED;
 display: flex;
 }
 */
-$(#flexContainer).css({"display": "flex"});
+$('#flexContainer').css({"display": "flex"});
 
 /*
 header {
@@ -149,16 +154,16 @@ $('details').css ({"font-family": "nmfont5",
 "font-size": "20px"
 });
 
-#content {
-min-height: 500px;
-background: #74AFAD;
-flex: 2 1 70%;
-/* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
-margin: 3px;
-padding: 13px;
-font-family: nmfont3;
-font-size: 20px;
-}
+//#content {
+//min-height: 500px;
+//background: #74AFAD;
+//flex: 2 1 70%;
+///* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
+//margin: 3px;
+//padding: 13px;
+//font-family: nmfont3;
+//font-size: 20px;
+//}
 $('#content').css({
 "min-height": "500px",
 "background": "#74AFAD",
@@ -203,24 +208,23 @@ text-align: center;
 }
 
 */
-$('footer').css ({
-"background": "#707070";
-"min-height": "50px";
-"margin": "3px";
-"padding": "3px";
+$('footer').css ({"background": "#707070",
+"min-height": "50px",
+"margin": "3px",
+"padding": "3px",
 "text-align": "center"
 });
 /************************************************************************/
 /* When the page is resized, use the styles below. Notice we order items*/
-@media all and max-width 640px {
+if (window.matchMedia('(max-width: 640px)').matches)
+{
 /*
 #flexContainer {
 flex-flow: column wrap;
  Shorthand property specifying flex-direction and flex-wrap 
 }
 */
- $(#flexContainer).css ({
-"flex-flow": "column wrap"
+ $('#flexContainer').css ({"flex-flow": "column wrap"
 /* Shorthand property specifying flex-direction and flex-wrap */
 });
       
@@ -229,7 +233,7 @@ header {
 min-height: 75px;
 }
 */
-    $('header').css ({
+$('header').css ({
 "min-height": "75px"
 });
     
@@ -239,7 +243,7 @@ min-height: 50px;
 order: 1;
 }
 */
-    $('nav').css ({
+$('nav').css ({
 "min-height": "50px",
 "order": "1"
 });
@@ -273,7 +277,8 @@ min-height: 25px;
 */
 
 $('footer').css({
-"order": "4";
+"order": "4",
 "min-height": "25px"
 });
+    
 }
